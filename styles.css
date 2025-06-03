@@ -1,0 +1,296 @@
+html {
+  font-size: 150%;
+}
+
+body {
+  margin: 0 1.5rem;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.navBar {
+  display: flex;
+  padding: 0.5rem 0px;
+  width: 100vw;
+  margin-left: calc(-1.5rem);
+  justify-content: space-evenly;
+}
+
+.navBar *:not(.name) {
+  padding: 0.5rem 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.navBar * {
+  margin: 0px 1rem;
+}
+
+.lightBlue {
+  background-color: #009dff;
+}
+
+.blue {
+  background-color: #2f57e8;
+}
+
+.purpleBlue {
+  background-color: #581cff;
+}
+
+.darkBlue {
+  background-color: #000f61;
+}
+
+.title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+}
+
+.oneHobby {
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+}
+
+.oneHobby img {
+  grid-area: image;
+}
+
+.hobbiesText {
+  grid-area: text;
+}
+
+.hobbiesText * {
+  text-align: left;
+}
+
+.unterTitel {
+  font-size: 1.4rem;
+}
+
+.lebenslaufMitBildContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.lebenslaufContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+}
+
+.kontaktformular {
+  align-items: center;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-label {
+  text-align: left;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.InfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 1120px;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.InfoContainer > div {
+  flex: 0 1 50rem;
+  max-width: 540px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.inputfeld {
+  height: 1.5rem;
+  align-items: center;
+}
+
+.inputfeldgross {
+  height: 3rem;
+  align-items: center;
+}
+
+.containerpictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul.listenFähigkeiten {
+  text-align: left;
+  list-style-position: inside;
+  padding-left: 0rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.profilbild {
+  display: flex;
+  align-items: center;
+}
+
+.portfolioimg {
+  width: calc(100% - 2rem);
+  padding: 0px;
+}
+
+.senden-button {
+  margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 120%;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hobbies {
+    flex-direction: column;
+  }
+
+  .oneHobby {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .oneHobby img {
+    max-width: 5rem;
+    height: auto;
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  .hobbiesText * {
+    text-align: center;
+  }
+
+  .lebenslaufMitBildContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+  .lebenslaufMitBildContainer img {
+    max-height: 10rem;
+    align-self: flex-start;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-label {
+    text-align: left;
+  }
+
+  .InfoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .InfoContainer > div {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    height: auto;
+    flex: 0 1 auto;
+  }
+
+  .containerpictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .lebenslaufMitBildContainer img {
+    max-height: 300px;
+    max-width: 150px;
+  }
+
+  .inputfeld {
+    height: 1.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 2000px) {
+  iframe {
+    width: 90%;
+  }
+}
